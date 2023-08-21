@@ -3,75 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storyboard App FAQ</title>
-  <link rel="icon" href="https://i.ibb.co/KqYHXcT/icon.png" style="border-radius: 6px;">
+    <title>FAQ</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #BBA2FF;
             color: #fff;
             padding: 20px;
             text-align: center;
-        }
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 20px;
         }
         .faq {
             padding: 20px;
         }
         h2 {
-            color: #444;
+            color: #BBA2FF;
         }
         h3 {
             color: #666;
         }
+        p {
+            line-height: 1.5;
+        }
+        .toc {
+            display: none;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .toc-toggle {
+            cursor: pointer;
+            font-weight: bold;
+            color: #BBA2FF;
+            text-decoration: underline;
+        }
+        .toc-list {
+            margin-left: 20px;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        a {
+            color: #BBA2FF;
+            text-decoration: none;
+        }
     </style>
+    <script>
+        function toggleToc() {
+            const toc = document.querySelector('.toc');
+            toc.style.display = toc.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Frequently Asked Questions</h1>
     </header>
-    <nav>
-        <a href="#faq-delete-scene">How do I delete a scene?</a>
-        <a href="#faq-rename-project">How to rename project name?</a>
-        <a href="#faq-zoom">How to zoom?</a>
-        <a href="#faq-change-color">How to change color?</a>
-        <a href="#faq-import-export">How to import image, export scene, and export the whole project?</a>
-    </nav>
     <div class="faq">
+        <div class="toc-toggle" onclick="toggleToc()">Show Table of Contents</div>
+        <div class="toc">
+            <ul class="toc-list">
+                <li><a href="#faq-delete-scene">How do I delete a scene?</a></li>
+                <li><a href="#faq-rename-project">How to rename project name?</a></li>
+                <li><a href="#faq-zoom">How to zoom?</a></li>
+                <li><a href="#faq-change-color">How to change color?</a></li>
+                <li><a href="#faq-import-export">How to import image, export scene, and export the whole project?</a></li>
+            </ul>
+        </div>
+
         <h2 id="faq-delete-scene">How do I delete a scene?</h2>
-        <p><strong>Answer:</strong> No, you can't delete a scene. You can only clear it.</p>
+        <p>No, you can't delete a scene. You can only clear it.</p>
 
         <h2 id="faq-rename-project">How to rename project name?</h2>
-        <p><strong>Answer:</strong> Click on your project, then click on the edit icon to rename the project.</p>
-        <p><strong>GIF:</strong></p>
-        <img src="https://i.ibb.co/fxDZRqj/Untitled-design.gif" alt="Rename Project GIF">
+        <p>Click on your project, then click on the edit icon to rename the project.</p>
+        <p><a href="https://i.ibb.co/fxDZRqj/Untitled-design.gif">View GIF</a></p>
 
         <h2 id="faq-zoom">How to zoom?</h2>
-        <p><strong>Answer:</strong> Switch to zoom mode by clicking on the zoom button. Then, you can zoom with two fingers or move the canvas with one finger.</p>
-        <p><strong>GIF:</strong></p>
-        <img src="https://i.ibb.co/0JBcPVh/Untitled-720-x-620-px.gif" alt="Zoom GIF">
+        <p>Switch to zoom mode by clicking on the zoom button. Then, you can zoom with two fingers or move the canvas with one finger.</p>
+        <p><a href="https://i.ibb.co/0JBcPVh/Untitled-720-x-620-px.gif">View GIF</a></p>
 
         <h2 id="faq-change-color">How to change color?</h2>
-        <p><strong>Answer:</strong> Click on the color button, then choose the color you want.</p>
-        <p><strong>GIF:</strong></p>
-        <img src="https://i.ibb.co/qMdPxK7/Untitled-720-x-620-px-1.gif" alt="Change Color GIF">
+        <p>Click on the color button, then choose the color you want.</p>
+        <p><a href="https://i.ibb.co/qMdPxK7/Untitled-720-x-620-px-1.gif">View GIF</a></p>
 
         <h2 id="faq-import-export">How to import an image, export scene, and export the whole project?</h2>
-        <p><strong>Answer:</strong> To import an image from the gallery, click on the 'more' button, then click on the 'Import Image' button. To export the current scene, click on the 'Export Scene as PNG' button. To export the whole project, click on the "Export Whole Project" button.</p>
-        <p><strong>GIF:</strong></p>
-        <img src="https://i.ibb.co/VYGG0g2/untitile.gif" alt="Import and Export GIF">
+        <p>To import an image from the gallery, click on the 'more' button, then click on the 'Import Image' button. To export the current scene, click on the 'Export Scene as PNG' button. To export the whole project, click on the "Export Whole Project" button.</p>
+        <p><a href="https://i.ibb.co/VYGG0g2/untitile.gif">View GIF</a></p>
     </div>
 </body>
 </html>
